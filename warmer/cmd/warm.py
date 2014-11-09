@@ -10,14 +10,14 @@ import argparse
 
 
 def _loop(throttle=100):
-    sleep_duration = (100 - throttle) / 100
-    process_bedtime = time.time() + 1 - sleep_duration
+    sleep_duration = (100 - throttle) / 1000
+    process_bedtime = time.time() + 0.1 - sleep_duration
     while True:
         now = time.time()
         if now < process_bedtime:
             continue
         time.sleep(sleep_duration)
-        process_bedtime = time.time() + 1 - sleep_duration
+        process_bedtime = time.time() + 0.1 - sleep_duration
 
 
 def _execute(args):
