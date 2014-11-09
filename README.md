@@ -12,7 +12,7 @@ This tool warms your computer.
 ## Install from GitHub
 
 ```
-pip install https://github.com/momijiame/warmer.git
+$ pip install https://github.com/momijiame/warmer.git
 ```
 
 # How to use
